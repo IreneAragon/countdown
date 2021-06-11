@@ -1,0 +1,26 @@
+{
+  "name": "countdown",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "rimraf ./dist && parcel ./src/index.html",
+    "start": "rimraf ./dist && parcel ./src/index.html --open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IreneAragon/countdown.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IreneAragon/countdown/issues"
+  },
+  "homepage": "https://github.com/IreneAragon/countdown#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5",
+    "rimraf": "^3.0.2",
+    "sass": "^1.34.1"
+  }
+}

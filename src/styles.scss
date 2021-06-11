@@ -1,0 +1,145 @@
+/* FONTS */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+/* Variables */
+$title-msg-color: hsl(5deg 84% 74%);
+$bg-color-countDown: hsl(128, 43%, 50%);
+$text-color-countDown: rgb(0, 73, 36);
+$text-color: hsl(125, 57%, 33%);
+$bg-secondary-color: hsl(0, 0%, 58%);
+$primary-font: "Roboto", sans-serif;
+$secondary-font: "Open Sans", sans-serif;
+$spacing: 0.15rem;
+$bg-url: url("./img/flamingo.jpg");
+
+/* Global Styles */
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $secondary-font;
+  background-image: $bg-url;
+  background-color: $bg-secondary-color;
+  color: $bg-color-countDown;
+  line-height: 1.5;
+  font-size: 0.875rem;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  letter-spacing: $spacing;
+  text-transform: capitalize;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+  font-family: $primary-font;
+}
+
+@media screen and (min-width: 800px) {
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 1.75rem;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+  body {
+    font-size: 1rem;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    line-height: 1;
+  }
+}
+
+/* section */
+.section {
+  padding: 5rem 0;
+}
+
+.content {
+  background-color: #e0f3f9;
+  padding: 2em;
+  width: 90vw;
+  margin: 2em auto;
+  max-width: 1170px;
+}
+
+main {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+/* Countdown Timer */
+.gift-img {
+  margin-bottom: 2rem;
+}
+
+.message h3 {
+  text-transform: uppercase;
+  color: $title-msg-color;
+  font-size: 32px;
+}
+.message p {
+  color: $text-color;
+  font-size: 20px;
+}
+
+@media screen and (min-width: 992px) {
+  .content {
+    display: grid;
+    place-items: center;
+    width: 95vw;
+  }
+}
+.message p {
+  margin: 2rem 0;
+}
+.countdown {
+  display: flex;
+  justify-content: center;
+}
+.countdown-format {
+  background: $bg-color-countDown;
+  color: $text-color-countDown;
+  margin-right: 1rem;
+  width: 5rem;
+  height: 5rem;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  padding: 0.5em;
+}
+.countdown-format span {
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.8rem;
+}
+.countdown h4 {
+  font-size: 2rem;
+  margin-bottom: 0.25rem;
+  letter-spacing: $spacing;
+}
+
+/* random gif */
+#randomGif {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  display: block;
+}
