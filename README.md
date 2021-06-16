@@ -2,7 +2,7 @@
 
 -  Run this project with Parcel, type into _src_ folder: 
 ``` bash
-parcel index.html 
+npm start
 ```
 
 
